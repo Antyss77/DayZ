@@ -21,13 +21,14 @@ public class Weapon {
     public enum WeaponType {
         ASSAULT_RIFLE,
         SUB_MACHINE_GUN,
-        PUMP_ACTION_RIFLES,
-        TACTICAL_RIFLES,
-        PRECISION_RIFLES,
-        HANDGUNS,
-        LAUNCHERS,
+        PUMP_ACTION_RIFLE,
+        TACTICAL_RIFLE,
+        PRECISION_RIFLE,
+        MACHINE_GUN,
+        HANDGUN,
+        LAUNCHER,
         SWORD,
         AXE,
-        KNIFE,
+        KNIFE
     }
 }
