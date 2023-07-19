@@ -7,6 +7,11 @@ public class Main {
 
             // VIDE POUR LE MOMENT
 
+            // Ajouter :
+            // Equipement pour les boucliers/pare balles/parachute
+            // Projecticles pour les grandes, cocktail molotov, flashbang,...
+
+
 
         }
     }

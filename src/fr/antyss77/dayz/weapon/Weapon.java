@@ -27,6 +27,7 @@ public class Weapon {
         HANDGUNS,
         LAUNCHERS,
         SWORD,
-        AXE
+        AXE,
+        KNIFE,
     }
 }
