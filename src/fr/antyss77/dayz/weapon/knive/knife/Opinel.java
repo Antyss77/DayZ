@@ -5,7 +5,7 @@ import fr.antyss77.dayz.weapon.knive.MeleeWeapon;
 public class Opinel extends MeleeWeapon {
 
     public Opinel() {
-        super("Opinel", WeaponCategory.MELEE_WEAPON, WeaponType.KNIFE, 30);
+        super("Opinel", WeaponCategory.MELEE_WEAPON, WeaponType.KNIFE, 30, 90);
 
     }
 }
