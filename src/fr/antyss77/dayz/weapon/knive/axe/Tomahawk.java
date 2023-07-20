@@ -5,7 +5,7 @@ import fr.antyss77.dayz.weapon.knive.MeleeWeapon;
 public class Tomahawk extends MeleeWeapon {
 
     public Tomahawk() {
-        super("Tomahawk", WeaponType.AXE, 30);
+        super("Tomahawk", WeaponCategory.MELEE_WEAPON, WeaponType.SWORD, 30);
 
     }
 }
