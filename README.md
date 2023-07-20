@@ -1,6 +1,6 @@
 # DayZ
 
-![GEN9zQ8LRyu0efoAhpDIuw](https://github.com/Antyss77/DayZ/assets/47704223/322885f6-2f2b-48df-9536-7c737c3b612f)
+![Documents](https://github.com/Antyss77/DayZ/assets/47704223/1fc7cae2-5bd4-4813-8cf8-b154a549552d)
 
 
 ### À faire
