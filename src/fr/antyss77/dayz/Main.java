@@ -6,12 +6,11 @@ public class Main {
 
 
             // VIDE POUR LE MOMENT
+            // Créer une méthode loadWeapon pour afficher l'arme
 
             // Ajouter :
             // Equipement pour les boucliers/pare balles/parachute
             // Projecticles pour les grandes, cocktail molotov, flashbang,...
-
-
 
 
         }
