@@ -21,6 +21,8 @@ public class Parachute extends Equipment {
 
 ### Tâches à réaliser
 - Implémenter un système d'ID unique pour chaque objet, afin de faciliter leur gestion.
+- Associer des munitions aux différentes catégories d'armes
+- Associer des effets spéciaux à des armes ou des catégories d'armes~~~~
 
 ### Licence 
 Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/main/LICENSE) pour plus d'informations.
