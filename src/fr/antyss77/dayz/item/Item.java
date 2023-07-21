@@ -38,7 +38,7 @@ public class Item {
 
     }
 
-    public void loadItem() {
+    public static void loadItem() {
 
     }
 }
