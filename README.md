@@ -4,5 +4,4 @@
 
 
 ### À faire
- - Les équipements (bouclier, pare-balle et parachute)
- - Les projecticles (grenade, flashbang, cocktail molotov)
+
