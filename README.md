@@ -1,7 +1,7 @@
 # DayZ
 
 ### Aperçu du Projet
-DayZ est un projet GitHub dédié au développement d'un système d'inventaire d'objets pour un jeu du même nom. L'objectif de ce projet est de créer un système d'inventaire bien structuré et efficace, comprenant différents types d'objets tels que des équipements, des armures, des utilitaires, des armes à feu, des couteaux et des projectiles.
+DayZ est un projet dédié au développement d'un système d'inventaire d'objets. L'objectif de ce projet est de créer un système d'inventaire bien structuré et efficace, comprenant différents types d'objets tels que des équipements, des armures, des utilitaires, des armes à feu, des couteaux et des projectiles.
 
 ### Fonctionnalités Clés
 - Organisation des objets en plusieurs catégories : équipements, armures, utilitaires, armes à feu, couteaux et projectiles.
@@ -22,7 +22,7 @@ public class Parachute extends Equipment {
 - Implémenter un système d'ID unique pour chaque objet, afin de faciliter leur gestion.
 
 ### Contribution 
-Toute contribution à ce projet est la bienvenue ! Si vous avez des idées, des améliorations ou des corrections à apporter, n'hésitez pas à ouvrir une nouvelle pull request. Nous apprécions votre participation !
+Toute contribution à ce projet est la bienvenue ! Si vous avez des idées, des améliorations ou des corrections à apporter, n'hésitez pas à ouvrir une nouvelle pull request. Merci pour votre participation !
 
 ### Licence 
 Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/main/LICENSE) our plus d'informations.
