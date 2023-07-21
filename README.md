@@ -14,7 +14,7 @@ DayZ est un projet dédié au développement d'un système d'inventaire d'objets
 ```java
 public class Parachute extends Equipment {
     public Parachute() {
-        super("Parachute", Item.ItemCategory.EQUIPMENT, ItemType.UTILITIES, 1, 300);
+        super("Parachute", ItemCategory.EQUIPMENT, ItemType.UTILITIES, 1, 300);
     }
 }
 ```
