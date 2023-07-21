@@ -25,5 +25,5 @@ public class Parachute extends Equipment {
 Toute contribution à ce projet est la bienvenue ! Si vous avez des idées, des améliorations ou des corrections à apporter, n'hésitez pas à ouvrir une nouvelle pull request. Merci pour votre participation !
 
 ### Licence 
-Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/main/LICENSE) our plus d'informations.
+Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/main/LICENSE) pour plus d'informations.
 
