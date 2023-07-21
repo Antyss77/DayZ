@@ -5,4 +5,3 @@
 
 ### À faire
 - Ajouter un système d'ID pour les items (dayz-223,dayz-224,...)
-- Ajouter une méthode pour afficher les armes dans le Main
