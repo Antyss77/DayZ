@@ -5,6 +5,6 @@ import fr.antyss77.dayz.item.equipment.Equipment;
 
 public class Parachute extends Equipment {
     public Parachute() {
-        super("Parachute", Item.ItemCategory.EQUIPMENT, ItemType.UTILITIES, 1, 300);
+        super("Parachute", ItemCategory.EQUIPMENT, ItemType.UTILITIES, 1, 300);
     }
 }
