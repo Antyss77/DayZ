@@ -38,7 +38,10 @@ public class Item {
 
     }
 
-    public static void loadItem() {
-
+    public void loadItem() {
+        System.out.println("Name: " + name);
+        System.out.println("Category: " + category);
+        System.out.println("Type: " + type);
+        System.out.println("Damage: " + damage);
     }
 }
