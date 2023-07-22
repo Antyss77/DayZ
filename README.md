@@ -26,5 +26,5 @@ public class Parachute extends Equipment {
 - Test de performance & Test unitaire
 
 ### Licence 
-Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/main/LICENSE) pour plus d'informations.
+Ce projet est sous licence MIT. Veuillez consulter le fichier [LICENCE](https://github.com/Antyss77/DayZ/blob/master/LICENCE.md) pour plus d'informations.
 
