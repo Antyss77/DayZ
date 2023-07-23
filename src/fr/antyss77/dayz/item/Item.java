@@ -6,8 +6,6 @@ public class Item {
     protected ItemType type;
     protected int damage;
 
-
-
     public Item(String name, ItemCategory category, ItemType type, int damage) {
         this.name = name;
         this.category = category;
@@ -37,7 +35,6 @@ public class Item {
         ARMOR,
         UTILITIES,
         GRENADE
-
     }
 
     public void loadItem() {
