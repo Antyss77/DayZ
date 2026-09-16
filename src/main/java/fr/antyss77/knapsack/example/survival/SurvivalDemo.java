@@ -58,18 +58,30 @@ public final class SurvivalDemo {
         section("3. Effects, per item and per category");
         EffectTable effects = SurvivalEffects.table();
         for (ItemDefinition item : new ItemDefinition[]{
-                SurvivalItems.AK47, SurvivalItems.PKM, SurvivalItems.KATANA,
-                SurvivalItems.MOLOTOV, SurvivalItems.SMOKE_GRENADE}) {
-            System.out.printf("  %-18s %s%n", item.name(), effects.of(item));
+                SurvivalItems.AK47, SurvivalItems.PKM, SurvivalItems.KATANA, SurvivalItems.TOMAHAWK,
+                SurvivalItems.MOLOTOV, SurvivalItems.FRAG_GRENADE, SurvivalItems.FLASHBANG}) {
+            System.out.printf("  %-24s %s%n", item.name(), effects.of(item));
         }
         System.out.println("  (the PKM and the molotov override what their category grants them)");
 
         section("4. Rules");
-        int leftover = backpack.add(registry.require("iron_armor"), 3);
-        System.out.printf("  3 iron armours offered, %d refused by the weight limit%n", leftover);
+        int leftover = backpack.add(registry.require("heavy_vest"), 3);
+        System.out.printf("  3 heavy vests offered, %d refused by the weight limit%n", leftover);
 
         Inventory pouch = SlotInventory.withSlots(2).rule(new TagFilterRule("ammo")).build();
         System.out.println("  ammo pouch refuses the katana: leftover = " + pouch.add(SurvivalItems.KATANA, 1));
+
+        section("5. The catalogue so far");
+        System.out.printf("  %d items across %d firearm calibres%n",
+                registry.all().size(), Ammunition.compatibleAmmo(registry, SurvivalItems.AK47).size()
+                        + Ammunition.compatibleAmmo(registry, SurvivalItems.GLOCK_42).size()
+                        + Ammunition.compatibleAmmo(registry, SurvivalItems.MP5).size()
+                        + Ammunition.compatibleAmmo(registry, SurvivalItems.KAR98K).size()
+                        + Ammunition.compatibleAmmo(registry, SurvivalItems.REMINGTON_870).size()
+                        + Ammunition.compatibleAmmo(registry, SurvivalItems.DESERT_EAGLE).size());
+        System.out.println("  head slot    : " + names(registry.withTag("headwear")));
+        System.out.println("  chest slot   : " + names(registry.withTag("vest")));
+        System.out.println("  offhand slot : " + names(registry.withTag("shield")));
 
         System.out.println();
         print("Backpack", backpack);

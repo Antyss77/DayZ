@@ -22,6 +22,14 @@ public final class SurvivalAttributes {
     public static final Attribute<Integer> ARMOR = Attribute.of("armor", Integer.class);
 
     /**
+     * Body part an armour piece occupies: {@code "head"}, {@code "hands"},
+     * {@code "chest"} or {@code "offhand"} for a carried shield. Two pieces
+     * sharing a slot cannot both be worn — that check belongs to your
+     * equip system, this attribute only carries the fact.
+     */
+    public static final Attribute<String> EQUIPMENT_SLOT = Attribute.of("equipmentSlot", String.class);
+
+    /**
      * Calibre, carried by both weapons and ammunition. Matching calibres is what
      * links the two, so a new cartridge works with every existing weapon of that
      * calibre without editing a single weapon definition.

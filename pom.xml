@@ -10,7 +10,7 @@
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>LootKit</name>
+    <name>Knapsack</name>
     <description>A small, dependency-free inventory system for Java.</description>
     <url>https://github.com/Antyss77/Knapsack</url>
 
@@ -38,6 +38,11 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
