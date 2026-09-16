@@ -1,9 +1,9 @@
-# LootKit
+# Knapsack
 
 A small, dependency-free inventory system for Java 17+.
 
 Slots, stacking, weight limits and per-container rules — the plumbing that every
-game, RPG prototype, crafting sim or loot system ends up rewriting. LootKit gives
+game, RPG prototype, crafting sim or loot system ends up rewriting. Knapsack gives
 you that layer as data-driven, immutable, unit-tested classes, and stays out of
 the way of your own domain model.
 
@@ -23,9 +23,9 @@ one class per armour piece. It compiles, and then adding an item means writing a
 class, rebalancing means a recompile, and loading a save file means a giant
 `switch`.
 
-LootKit treats items as **data**:
+Knapsack treats items as **data**:
 
-| | Class-per-item | LootKit |
+| | Class-per-item | Knapsack |
 |---|---|---|
 | Add an item | new `.java` file | a few lines of data (or a JSON row) |
 | Item properties | fields on subclasses | typed `Attribute<T>` keys |
@@ -34,12 +34,12 @@ LootKit treats items as **data**:
 
 ## Install
 
-Not on Maven Central yet. Clone it, or copy `src/main/java/fr/antyss77/lootkit`
+Not on Maven Central yet. Clone it, or copy `src/main/java/fr/antyss77/knapsack`
 into your project — it has no dependencies.
 
 ```bash
-git clone https://github.com/Antyss77/lootkit.git
-cd lootkit
+git clone https://github.com/Antyss77/Knapsack.git
+cd Knapsack
 mvn test
 mvn compile exec:java      # runs the survival demo
 ```
@@ -184,7 +184,7 @@ several rule sets (hardcore mode, PvE mode, a test fixture with effects off).
 
 ## Example
 
-[`example/survival`](src/main/java/fr/antyss77/lootkit/example/survival) is a
+[`example/survival`](src/main/java/fr/antyss77/knapsack/example/survival) is a
 complete sample: a catalogue of weapons, ammo, armour and consumables, a
 weight-limited backpack, and an ammo pouch that refuses anything untagged.
 Run it with `mvn compile exec:java`, then delete the package — nothing in the
