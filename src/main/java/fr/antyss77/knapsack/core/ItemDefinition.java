@@ -159,6 +159,28 @@ public final class ItemDefinition {
             return this;
         }
 
+        /**
+         * Attaches an attribute without a compile-time {@link Attribute} constant,
+         * inferring the key's type from the value's own class. Meant for
+         * data-driven sources — a JSON catalogue, a database row — where the set
+         * of keys is not known at compile time.
+         *
+         * <p>The inferred {@code Attribute<>} is still {@code key + type}, so it
+         * is equal to a hand-declared constant with the same key and type: an item
+         * loaded as {@code attribute("damage", 35)} is found by
+         * {@code item.attribute(SurvivalAttributes.DAMAGE)} as long as both agree
+         * the value is an {@code Integer}. Prefer the typed overload above in
+         * hand-written code; it fails at compile time instead of at lookup time.
+         */
+        @SuppressWarnings("unchecked")
+        public Builder attribute(String key, Object value) {
+            Objects.requireNonNull(key, "key");
+            Objects.requireNonNull(value, "value");
+            Attribute<Object> attribute = (Attribute<Object>) Attribute.of(key, value.getClass());
+            attributes.put(attribute, value);
+            return this;
+        }
+
         public ItemDefinition build() {
             return new ItemDefinition(this);
         }

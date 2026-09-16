@@ -1,5 +1,9 @@
 # Knapsack
 
+[![Build](https://github.com/Antyss77/Knapsack/actions/workflows/build.yml/badge.svg)](https://github.com/Antyss77/Knapsack/actions/workflows/build.yml)
+[![](https://jitpack.io/v/Antyss77/Knapsack.svg)](https://jitpack.io/#Antyss77/Knapsack)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A small, dependency-free inventory system for Java 17+.
 
 Slots, stacking, weight limits and per-container rules — the plumbing that every
@@ -34,8 +38,30 @@ Knapsack treats items as **data**:
 
 ## Install
 
-Not on Maven Central yet. Clone it, or copy `src/main/java/fr/antyss77/knapsack`
-into your project — it has no dependencies.
+Via [JitPack](https://jitpack.io/#Antyss77/Knapsack), no cloning needed. Add the
+JitPack repository, then the dependency:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.Antyss77</groupId>
+    <artifactId>Knapsack</artifactId>
+    <version>v0.1.0</version>
+</dependency>
+```
+
+(Gradle: `implementation 'com.github.Antyss77:Knapsack:v0.1.0'` with
+`maven { url 'https://jitpack.io' }` in your repositories.) Any tag or commit
+hash works as the version — check the badge above for what is currently built.
+
+Not on Maven Central yet — see the roadmap. To hack on Knapsack itself, or to
+vendor it without JitPack, clone it directly; it has no dependencies:
 
 ```bash
 git clone https://github.com/Antyss77/Knapsack.git
@@ -182,6 +208,43 @@ is your game loop's business — `Effect` is an empty interface on purpose, and
 keeping the table separate from the catalogue lets one set of items drive
 several rule sets (hardcore mode, PvE mode, a test fixture with effects off).
 
+## Loading a catalogue from JSON
+
+Everything above also works for items that were never written in Java. `CatalogLoader`
+turns a JSON array into `ItemDefinition`s, with attribute types inferred from the
+JSON value — a plain number becomes an `Integer` attribute, `2.5` becomes a
+`Double`, text becomes a `String`:
+
+```json
+[
+  {
+    "id": "ak47",
+    "name": "AK-47",
+    "weight": 3.6,
+    "tags": ["weapon", "firearm", "assault_rifle"],
+    "attributes": { "damage": 35, "caliber": "762x39", "magazineSize": 30 }
+  }
+]
+```
+
+```java
+List<ItemDefinition> items = CatalogLoader.loadResource(MyGame.class, "/catalog/items.json");
+ItemRegistry registry = new ItemRegistry().registerAll(items);
+
+registry.require("ak47").attribute(SurvivalAttributes.DAMAGE);   // Optional[35]
+```
+
+That last line is the point: as long as your hand-declared `Attribute.of("damage",
+Integer.class)` constant agrees with the JSON on key and type, an item loaded from
+a text file is indistinguishable from one built with the typed builder. Rebalancing
+becomes editing a number in JSON, not recompiling.
+
+`CatalogLoader.load(Path)` reads a file from disk; `CatalogLoader.loadResource(...)`
+reads one bundled inside your jar. Parsing itself has no third-party dependency —
+see [`example/survival/survival-items.json`](src/main/resources/catalog/survival-items.json)
+for the full sample catalogue, and `JsonCatalogDemo` for it loaded and used side by
+side with the hand-written one.
+
 ## Example
 
 [`example/survival`](src/main/java/fr/antyss77/knapsack/example/survival) is a
@@ -195,19 +258,19 @@ core depends on it.
 - [x] Per-instance state: ammo loaded, durability, unique ids
 - [x] Ammunition compatibility and reloading
 - [x] Item and category effects
+- [x] JSON loading for catalogues
 - [ ] Grid inventories (multi-cell items, Tetris-style)
 - [ ] Equipment slots (head / chest / hands) as a separate container type
 - [ ] Transfer helper: move a stack between two inventories atomically
 - [ ] Inventory events / listeners
-- [ ] JSON loading for catalogues
 - [ ] Publish to Maven Central
 
-Issues and pull requests are welcome, especially on the items above.
+Issues and pull requests are welcome, especially on the items above — see
+[CONTRIBUTING.md](CONTRIBUTING.md) before opening one.
 
 ## Contributing
 
-Fork, branch, `mvn test`, open a pull request. Keep the core package free of
-game-specific concepts — that is the one rule the design depends on.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

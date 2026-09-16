@@ -1,0 +1,368 @@
+[
+  {
+    "id": "ak47",
+    "name": "AK-47",
+    "weight": 3.6,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "assault_rifle"],
+    "attributes": {
+      "damage": 35,
+      "caliber": "762x39",
+      "magazineSize": 30
+    }
+  },
+  {
+    "id": "m4a1",
+    "name": "M4A1",
+    "weight": 3.4,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "assault_rifle"],
+    "attributes": {
+      "damage": 33,
+      "caliber": "556x45",
+      "magazineSize": 30
+    }
+  },
+  {
+    "id": "glock42",
+    "name": "Glock 42",
+    "weight": 0.4,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "handgun"],
+    "attributes": {
+      "damage": 18,
+      "caliber": "380acp",
+      "magazineSize": 6
+    }
+  },
+  {
+    "id": "deagle",
+    "name": "Desert Eagle",
+    "weight": 1.1,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "handgun"],
+    "attributes": {
+      "damage": 32,
+      "caliber": "50ae",
+      "magazineSize": 7
+    }
+  },
+  {
+    "id": "mp5",
+    "name": "MP5",
+    "weight": 2.5,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "submachine_gun"],
+    "attributes": {
+      "damage": 22,
+      "caliber": "9x19",
+      "magazineSize": 30
+    }
+  },
+  {
+    "id": "kar98k",
+    "name": "Kar98k",
+    "weight": 4.1,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "sniper_rifle"],
+    "attributes": {
+      "damage": 65,
+      "caliber": "792x57",
+      "magazineSize": 5
+    }
+  },
+  {
+    "id": "rem870",
+    "name": "Remington 870",
+    "weight": 3.2,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "shotgun"],
+    "attributes": {
+      "damage": 55,
+      "caliber": "12gauge",
+      "magazineSize": 8
+    }
+  },
+  {
+    "id": "pkm",
+    "name": "PKM",
+    "weight": 7.5,
+    "maxStackSize": 1,
+    "tags": ["weapon", "firearm", "machine_gun"],
+    "attributes": {
+      "damage": 40,
+      "caliber": "762x39",
+      "magazineSize": 100
+    }
+  },
+  {
+    "id": "ammo_762x39",
+    "name": "7.62x39mm",
+    "weight": 0.016,
+    "maxStackSize": 60,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "762x39"
+    }
+  },
+  {
+    "id": "ammo_556x45",
+    "name": "5.56x45mm",
+    "weight": 0.012,
+    "maxStackSize": 60,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "556x45"
+    }
+  },
+  {
+    "id": "ammo_380acp",
+    "name": ".380 ACP",
+    "weight": 0.009,
+    "maxStackSize": 60,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "380acp"
+    }
+  },
+  {
+    "id": "ammo_50ae",
+    "name": ".50 AE",
+    "weight": 0.023,
+    "maxStackSize": 40,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "50ae"
+    }
+  },
+  {
+    "id": "ammo_9x19",
+    "name": "9x19mm",
+    "weight": 0.008,
+    "maxStackSize": 60,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "9x19"
+    }
+  },
+  {
+    "id": "ammo_792x57",
+    "name": "7.92x57mm",
+    "weight": 0.027,
+    "maxStackSize": 30,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "792x57"
+    }
+  },
+  {
+    "id": "ammo_12gauge",
+    "name": "12 gauge shell",
+    "weight": 0.032,
+    "maxStackSize": 30,
+    "tags": ["ammo"],
+    "attributes": {
+      "caliber": "12gauge"
+    }
+  },
+  {
+    "id": "opinel",
+    "name": "Opinel knife",
+    "weight": 0.05,
+    "maxStackSize": 1,
+    "tags": ["weapon", "melee", "knife", "tool"],
+    "attributes": {
+      "damage": 12,
+      "durability": 90
+    }
+  },
+  {
+    "id": "combat_knife",
+    "name": "Combat knife",
+    "weight": 0.3,
+    "maxStackSize": 1,
+    "tags": ["weapon", "melee", "knife"],
+    "attributes": {
+      "damage": 20,
+      "durability": 130
+    }
+  },
+  {
+    "id": "swiss_knife",
+    "name": "Swiss army knife",
+    "weight": 0.12,
+    "maxStackSize": 1,
+    "tags": ["weapon", "melee", "knife", "tool"],
+    "attributes": {
+      "damage": 8,
+      "durability": 150
+    }
+  },
+  {
+    "id": "tomahawk",
+    "name": "Tomahawk",
+    "weight": 0.9,
+    "maxStackSize": 1,
+    "tags": ["weapon", "melee", "axe"],
+    "attributes": {
+      "damage": 32,
+      "durability": 100
+    }
+  },
+  {
+    "id": "katana",
+    "name": "Katana",
+    "weight": 1.2,
+    "maxStackSize": 1,
+    "tags": ["weapon", "melee", "sword"],
+    "attributes": {
+      "damage": 48,
+      "durability": 120
+    }
+  },
+  {
+    "id": "light_helmet",
+    "name": "Light helmet",
+    "weight": 0.9,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor", "headwear"],
+    "attributes": {
+      "equipmentSlot": "head",
+      "armor": 15,
+      "durability": 60
+    }
+  },
+  {
+    "id": "heavy_helmet",
+    "name": "Heavy ballistic helmet",
+    "weight": 1.8,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor", "headwear"],
+    "attributes": {
+      "equipmentSlot": "head",
+      "armor": 35,
+      "durability": 100
+    }
+  },
+  {
+    "id": "tactical_gloves",
+    "name": "Tactical gloves",
+    "weight": 0.3,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor"],
+    "attributes": {
+      "equipmentSlot": "hands",
+      "armor": 5,
+      "durability": 80
+    }
+  },
+  {
+    "id": "light_vest",
+    "name": "Light bulletproof vest",
+    "weight": 3.5,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor", "vest"],
+    "attributes": {
+      "equipmentSlot": "chest",
+      "armor": 25,
+      "durability": 90
+    }
+  },
+  {
+    "id": "heavy_vest",
+    "name": "Heavy bulletproof vest",
+    "weight": 7.0,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor", "vest"],
+    "attributes": {
+      "equipmentSlot": "chest",
+      "armor": 50,
+      "durability": 150
+    }
+  },
+  {
+    "id": "riot_shield",
+    "name": "Riot shield",
+    "weight": 6.0,
+    "maxStackSize": 1,
+    "tags": ["equipment", "armor", "shield"],
+    "attributes": {
+      "equipmentSlot": "offhand",
+      "armor": 20,
+      "durability": 200
+    }
+  },
+  {
+    "id": "parachute",
+    "name": "Parachute",
+    "weight": 8.0,
+    "maxStackSize": 1,
+    "tags": ["equipment", "utility"],
+    "attributes": {
+      "durability": 300
+    }
+  },
+  {
+    "id": "molotov",
+    "name": "Molotov cocktail",
+    "weight": 0.7,
+    "maxStackSize": 3,
+    "tags": ["weapon", "throwable", "incendiary"],
+    "attributes": {
+      "damage": 40,
+      "fuseSeconds": 2.5
+    }
+  },
+  {
+    "id": "frag_grenade",
+    "name": "Fragmentation grenade",
+    "weight": 0.5,
+    "maxStackSize": 3,
+    "tags": ["weapon", "throwable", "explosive"],
+    "attributes": {
+      "damage": 70,
+      "fuseSeconds": 3.5
+    }
+  },
+  {
+    "id": "flashbang",
+    "name": "Flashbang",
+    "weight": 0.35,
+    "maxStackSize": 3,
+    "tags": ["throwable", "flashbang"],
+    "attributes": {
+      "fuseSeconds": 1.5
+    }
+  },
+  {
+    "id": "smoke",
+    "name": "Smoke grenade",
+    "weight": 0.45,
+    "maxStackSize": 3,
+    "tags": ["throwable"],
+    "attributes": {
+      "fuseSeconds": 1.5
+    }
+  },
+  {
+    "id": "bandage",
+    "name": "Bandage",
+    "weight": 0.05,
+    "maxStackSize": 10,
+    "tags": ["consumable", "medical"]
+  },
+  {
+    "id": "morphine",
+    "name": "Morphine injector",
+    "weight": 0.03,
+    "maxStackSize": 5,
+    "tags": ["consumable", "medical"]
+  },
+  {
+    "id": "syringe",
+    "name": "Syringe",
+    "weight": 0.02,
+    "maxStackSize": 5,
+    "tags": ["consumable", "medical"]
+  }
+]
